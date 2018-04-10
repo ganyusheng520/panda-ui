@@ -1,0 +1,51 @@
+@import "../../base/fn";
+
+.btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: $c_white;
+  box-sizing: border-box ;
+  border: 0;
+}
+
+.btn--large {
+  height: 50px;
+  line-height: 50px;;
+  border-radius: 5px;;
+}
+
+.btn--normal {
+  padding: 0 30px;;
+  min-width: 40px;;
+  height: 40px;;
+  line-height: 40px;;
+  border-radius: 4px;
+}
+
+.btn--small {
+  display: inline-block;
+  padding: 6px 10px;
+  width: auto;
+  border-radius: 4px;
+
+}
+
+.btn--primary {
+  background-color: $c_brand;
+}
+
+.btn--default {
+  color: $c_brand;
+  background-color: rgba(255, 77, 77, .15)
+}
+
+.btn--disabled {
+  opacity: .3;
+}
+
+.btn-box {
+  margin-top: $padding;
+  padding: 0 $padding;
+}

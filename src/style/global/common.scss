@@ -1,0 +1,8 @@
+.page {
+  @include fullFill;
+  overflow-y: scroll;
+}
+.fz16 {
+  font-size: $fontSize;
+}
+

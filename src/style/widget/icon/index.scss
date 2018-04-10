@@ -1,0 +1,19 @@
+@import "../../base/fn";
+.icon--primary {
+  color: $c_gray3;
+}
+.btn--active {
+  color: $c_brand;
+}
+
+.icon--disabled {
+  color: $c_gray1;
+}
+
+.icon--inherit {
+  color: inherit;
+}
+
+.color-ff {
+  color: $c_white;
+}

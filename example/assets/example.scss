@@ -1,0 +1,33 @@
+@import "../../src/style/ui";
+.page {
+  background-color: $c_gray1;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.page__hd {
+  padding: $padding;
+  .page__title {
+    margin-top: 0;
+    margin-bottom: $padding;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .page__desc {
+    font-size: 14px;
+    color: $c_gray5;
+    margin-top: 5px;
+  }
+}
+
+.tab-container__item {
+  padding: $padding;
+  color: $c_gray5;
+}
+
+.slide-enter-active {
+  @include slide-in;
+}
+.slide-leave-active {
+  @include slide-out;
+}

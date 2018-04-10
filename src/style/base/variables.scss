@@ -1,0 +1,40 @@
+//color
+@import "./skin/caiyun";
+
+// 颜色
+//全局
+$c_black: #000;
+$c_dark: #262a30;
+$c_gray5: #5c626b;
+$c_gray4: #959ba3;
+$c_gray3: #cbcfd6;
+$c_gray2: #e9ecf0;
+$c_gray1: #f7f8f9;
+$c_white: #fff;
+
+//头像
+$c_p_1: #2dc888;
+$c_p_2: #488ff9;
+$c_p_3: #ffa400;
+$c_p_4: #fb7171;
+
+//默认应用色 
+$c_a_green: #2dc888;
+$c_a_blue: #488ff9;
+$c_a_yellow: #ffa400;
+$c_a_red: #fb7171;
+$c_a_violet: #8d71ff;
+$c_a_orange: #ff8022;
+
+//距离
+$padding: 15px;
+
+//font
+
+$fontEN:-apple-system-font,"Helvetica Neue";
+$fontCN:"PingFang SC","Hiragino Sans GB","Microsoft YaHei";
+$fontSans:sans-serif;
+$fontDefault:$fontEN,$fontSans;
+$fontSize: 16px;
+
+

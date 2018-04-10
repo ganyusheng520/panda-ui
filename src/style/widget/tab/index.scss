@@ -1,0 +1,40 @@
+@import "../../base/fn";
+.tab-wrapper {
+  position: relative;
+  z-index: 1;
+  height: 40px;
+  font-size: 14px;
+  color: $c_gray4;
+  background-color: $c_white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
+  @include flex;
+}
+
+.tab__item {
+  flex: 1;
+  -webkit-box-flex: 1;
+  line-height: 40px;
+  text-align: center;
+}
+.tab__item-inner {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.tab__item--active {
+  .tab__item-inner {
+    color: $c_brand;
+    &:after {
+      display: block;
+      bottom: 0;
+      width: 100%;
+      height: 3px;
+      content: '';
+      background-color: $c_brand;
+      @include horizontalCenter;
+    }
+  }
+
+}
