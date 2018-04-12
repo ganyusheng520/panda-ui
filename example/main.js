@@ -3,10 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Xmv from '../src/index'
+import panda from '../src/index'
 
 Vue.config.productionTip = false
-Vue.use(Xmv)
+Vue.use(panda)
 
 /* eslint-disable no-new */
 new Vue({

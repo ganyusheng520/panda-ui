@@ -5,7 +5,7 @@
 ## 使用
 
 
-xnpm安装依赖
+npm安装依赖
 
 ```shell
 npm i -S panda-ui
@@ -41,7 +41,6 @@ Vue、Vue-cli、ES6、Sass、Babel、Webpack、Eslint
 ### 环境准备
 1. node、npm
 2. git
-3. 搭建xnpm环境
 
 
 ### 开始开发
@@ -62,8 +61,8 @@ git checkout feature-xxx
 安装依赖，查看示例
 
 ```shell
-xnpm install
-xnpm start //查看示例
+npm install
+npm start //查看示例
 ```
 
 开发测试完毕不要直接用主干分支合并，先将featrue分支推送到远端，并知会其他人review
