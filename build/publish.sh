@@ -9,4 +9,4 @@ git add -A
 git commit -m 'publish build'
 git push origin master
 # publish
-xnpm publish
+npm publish

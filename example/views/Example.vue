@@ -1,8 +1,8 @@
 <template>
     <div class="page">
         <div class="page__hd">
-            <h1 class="page__title">Xmv</h1>
-            <p class="page__desc">这是一套基于讯盟移动端最新视觉规范的基础VUE组件库，由讯盟前端团队为讯盟app内网页量身设计，令用户的使用感知更加统一。</p>
+            <h1 class="page__title">panda-ui</h1>
+            <p class="page__desc">这是一套基于移动端最新视觉规范的基础VUE组件库，由ganyusheng量身设计，令用户的使用感知更加统一。</p>
         </div>
         <div class="page__bd">
             <v-cell-title>表单组件</v-cell-title>

@@ -15,11 +15,11 @@ npm i -S panda-ui
 在入口文件main.js
 
 ```
-import vueui from 'vueui'
-Vue.use(vueui)
+import panda from 'panda'
+Vue.use(panda)
 ```
 
-完成以上步骤就可以在全局范围内使用vueui组件,如：
+完成以上步骤就可以在全局范围内使用panda组件,如：
 
 ```
 <v-button>确定</v-button>
@@ -27,7 +27,7 @@ Vue.use(vueui)
 2.按需引入(待优化)
 
 ```
-import {Style, VButton} from 'vueui/src/module'
+import {Style, VButton} from 'panda/src/module'
 ```
 > 注意：按需引入需要单独引入Style
 

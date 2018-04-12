@@ -1,6 +1,6 @@
 {
   "name": "panda-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "vue common component",
   "author": "再见孙悟空 <380582934@qq.com>",
   "main": "lib/index.js",
