@@ -12,19 +12,19 @@
     props: {
       size: {
         type: Number,
-        default: 12,
+        default: 12
       },
       className: {
-        type: [String, Array],
+        type: [String, Array]
       },
       disabled: {
         type: Boolean,
-        default: false,
+        default: false
       },
       active: {
         type: Boolean,
-        default: false,
-      },
+        default: false
+      }
     },
     computed: {
       getClassName() {
@@ -36,7 +36,7 @@
           classList.push('btn--active')
         }
         return classList.concat([`fz${this.size}`]).concat(this.className)
-      },
+      }
     },
 
     methods: {
@@ -44,8 +44,8 @@
         if (!this.disable) {
           this.$emit('onIconClick')
         }
-      },
-    },
+      }
+    }
 
   }
 </script>

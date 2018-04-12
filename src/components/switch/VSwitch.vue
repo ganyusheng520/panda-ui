@@ -16,19 +16,19 @@ export default {
   props: {
     title: {
       type: [String],
-      default: '',
+      default: ''
     },
     value: {
       type: Boolean,
-      default: false,
+      default: false
     },
     isDisabled: {
-      type: Boolean,
+      type: Boolean
     },
     wordLimit: {
       type: Number,
-      default: 20,
-    },
+      default: 20
+    }
   },
 
   filters: {
@@ -37,7 +37,7 @@ export default {
         return ''
       }
       return value.length > maxCount ? `${value.substring(0, maxCount)}...` : value
-    },
+    }
   },
 
   computed: {
@@ -51,9 +51,9 @@ export default {
         } else {
           this.$emit('input', newValue)
         }
-      },
-    },
-  },
+      }
+    }
+  }
 }
 </script>
 

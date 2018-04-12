@@ -12,20 +12,20 @@
     name: 'v-button',
     props: {
       buttonStyle: {
-        type: Object,
+        type: Object
       },
       disabled: {
         type: Boolean,
-        default: false,
+        default: false
       },
       size: {
         type: String,
-        default: 'normal',
+        default: 'normal'
       },
       type: {
         type: String,
-        default: 'default',
-      },
+        default: 'default'
+      }
     },
 
     computed: {
@@ -35,14 +35,14 @@
           list.push('btn--disabled')
         }
         return list
-      },
+      }
     },
     methods: {
       onClick() {
         if (!this.disabled) {
           this.$emit('onButtonClick')
         }
-      },
-    },
+      }
+    }
   }
 </script>

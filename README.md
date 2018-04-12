@@ -32,7 +32,6 @@ import {Style, VButton} from 'panda/src/module'
 > 注意：按需引入需要单独引入Style
 
 
-
 ## 开发
 
 ### 技术栈
@@ -191,7 +190,7 @@ BEM规范：http://getbem.com/introduction/
 
 ## Licensing
 
-waiting...
+MIT
 
 
 

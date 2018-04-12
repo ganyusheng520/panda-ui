@@ -28,30 +28,30 @@
 
   export default {
     components: {
-      VIcon,
+      VIcon
     },
     name: 'v-input',
     mixins: [ellipsis],
     props: {
       value: {
-        type: String,
+        type: String
       },
       label: {
         type: String,
-        default: '',
+        default: ''
       },
       placeHolder: {
         type: String,
-        default: '',
+        default: ''
       },
       maxLength: {
         type: Number,
-        default: 100,
+        default: 100
       },
       showIcon: {
         type: Boolean,
-        default: false,
-      },
+        default: false
+      }
     },
 
     computed: {
@@ -61,15 +61,15 @@
         },
         set: debounce(function fn(val) {
           this.$emit('input', val)
-        }, 200),
-      },
+        }, 200)
+      }
     },
 
     methods: {
       clear() {
         this.currentValue = ''
-      },
-    },
+      }
+    }
   }
 
 </script>

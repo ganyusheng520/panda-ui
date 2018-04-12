@@ -5,7 +5,7 @@
 </template>
 <script>
   export default {
-    name: 'v-button-box',
+    name: 'v-button-box'
   }
 </script>
 

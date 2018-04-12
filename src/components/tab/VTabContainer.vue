@@ -17,12 +17,12 @@
     props: {
       currentIndex: {
         type: Number,
-        default: 0,
+        default: 0
       },
       containerList: {
         type: Array,
-        default: [],
-      },
-    },
+        default: []
+      }
+    }
   }
 </script>

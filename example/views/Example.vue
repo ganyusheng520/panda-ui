@@ -26,6 +26,12 @@
                     <v-icon :size="16" slot="cell-ft" class-name="icon-xiayibu"></v-icon>
                 </v-cell>
             </v-cell-group>
+            <v-cell-title>操作反馈</v-cell-title>
+            <v-cell-group>
+                <v-cell left-text="Loading" @onCellClick="link('/loading')">
+                    <v-icon :size="16" slot="cell-ft" class-name="icon-xiayibu"></v-icon>
+                </v-cell>
+            </v-cell-group>
             <v-cell-title>导航相关</v-cell-title>
             <v-cell-group>
                 <v-cell left-text="Tab" @onCellClick="link('/tab')">
@@ -46,14 +52,14 @@ export default {
   data() {
     return {
       activeTabIndex: 0,
-      isSwitched: true,
+      isSwitched: true
     }
   },
   methods: {
     link(path) {
       this.$router.push(path)
-    },
-  },
+    }
+  }
 }
 </script>
 

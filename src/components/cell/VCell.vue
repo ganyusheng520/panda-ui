@@ -23,32 +23,32 @@
 
   export default {
     components: {
-      VIcon,
+      VIcon
     },
     name: 'v-cell',
     filters: {
       limit(value, len = 10) {
         return value && value.length > len ? `${value.substring(0, len)}...` : value
-      },
+      }
     },
 
     props: {
       leftText: {
         type: [String, Number],
-        default: '',
+        default: ''
       },
       limit: {
         type: Number,
-        default: 10,
+        default: 10
       },
       rightText: {
         type: [String, Number],
-        default: '',
+        default: ''
       },
       disabled: {
         type: Boolean,
-        default: false,
-      },
+        default: false
+      }
     },
     computed: {
       getCellClass() {
@@ -57,14 +57,14 @@
           classList.push('disabled')
         }
         return classList
-      },
+      }
     },
 
     methods: {
       handleClick() {
         this.$emit('onCellClick')
-      },
-    },
+      }
+    }
 
   }
 </script>

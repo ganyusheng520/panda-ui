@@ -17,16 +17,16 @@
     props: {
       text: {
         type: String,
-        default: '',
+        default: ''
       },
       active: {
         type: Boolean,
-        default: false,
+        default: false
       },
       index: {
         type: Number,
-        default: 0,
-      },
+        default: 0
+      }
     },
 
     methods: {
@@ -34,7 +34,7 @@
         if (!this.active) {
           this.$emit('updateActiveTab', this.index)
         }
-      },
-    },
+      }
+    }
   }
 </script>

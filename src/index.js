@@ -6,6 +6,7 @@ import {
   VIcon,
   VButton,
   VInput,
+  VLoading
 } from './module'
 
 
@@ -22,6 +23,7 @@ function install(Vue) {
     VIcon,
     VButton,
     VInput,
+    VLoading
   ]
   components.forEach((Component) => {
     Component.install(Vue)
@@ -30,7 +32,7 @@ function install(Vue) {
 
 const panda = {
   version: '__VERSION__',
-  install,
+  install
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

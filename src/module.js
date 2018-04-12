@@ -5,6 +5,7 @@ import VSwitch from './modules/switch'
 import VIcon from './modules/icon'
 import VButton from './modules/button'
 import VInput from './modules/input'
+import VLoading from './modules/loading'
 
 export {
   Style,
@@ -14,4 +15,5 @@ export {
   VIcon,
   VButton,
   VInput,
+  VLoading
 }

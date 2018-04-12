@@ -6,7 +6,7 @@
 <script>
 
   export default {
-    name: 'v-cell-group',
+    name: 'v-cell-group'
   }
 </script>
 

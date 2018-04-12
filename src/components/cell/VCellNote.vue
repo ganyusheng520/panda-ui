@@ -4,6 +4,6 @@
 
 <script>
   export default {
-    name: 'v-cell-note',
+    name: 'v-cell-note'
   }
 </script>

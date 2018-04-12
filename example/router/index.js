@@ -5,6 +5,7 @@ import ButtonExample from '../views/ButtonExample'
 import SwitchExample from '../views/SwitchExample'
 import InputExample from '../views/InputExample'
 import TabExample from '../views/TabExample'
+import LoadingExample from '../views/LoadingExample'
 
 
 Vue.use(Router)
@@ -13,23 +14,27 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Example,
+      component: Example
     },
     {
       path: '/button',
-      component: ButtonExample,
+      component: ButtonExample
     },
     {
       path: '/switch',
-      component: SwitchExample,
+      component: SwitchExample
     },
     {
       path: '/input',
-      component: InputExample,
+      component: InputExample
     },
     {
       path: '/tab',
-      component: TabExample,
+      component: TabExample
     },
+    {
+      path: '/loading',
+      component: LoadingExample
+    }
   ],
 })

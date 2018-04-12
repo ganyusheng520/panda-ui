@@ -6,7 +6,7 @@
 <script>
 
   export default {
-    name: 'v-tab',
+    name: 'v-tab'
   }
 </script>
 

@@ -4,7 +4,7 @@
 
 <script>
   export default {
-    name: 'v-cell-title',
+    name: 'v-cell-title'
   }
 </script>
 
