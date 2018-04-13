@@ -26,19 +26,32 @@ $c_a_red: #fb7171;
 $c_a_violet: #8d71ff;
 $c_a_orange: #ff8022;
 
+// toast
+$toast-color: $c_gray3;
+$toast-bgc: rgba(37, 38, 45, 0.9);
+
+// popup
+$popup-mask-bgc: rgb(37, 38, 45);
+$popup-mask-opacity: .4;
+
 //距离
 $padding: 15px;
 
 //font
 
-$fontEN:-apple-system-font,"Helvetica Neue";
-$fontCN:"PingFang SC","Hiragino Sans GB","Microsoft YaHei";
-$fontSans:sans-serif;
-$fontDefault:$fontEN,$fontSans;
+$fontEN: -apple-system-font, "Helvetica Neue";
+$fontCN: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei";
+$fontSans: sans-serif;
+$fontDefault: $fontEN, $fontSans;
 $fontSize: 16px;
 
-$fontSize-large: 18px;
-$fontSize-medium: 16px;
-$fontSize-small: 14px;
+$fontSize-large-xxxx: 30px;
+$fontSize-large-xxx: 24px;
+$fontSize-large-xx: 20px;
+$fontSize-large-x: 18px;
+$fontSize-large: 16px;
+$fontSize-medium: 14px;
+$fontSize-small: 12px;
+$fontSize-small-s: 10px;
 
 

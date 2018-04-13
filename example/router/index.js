@@ -6,6 +6,7 @@ import SwitchExample from '../views/SwitchExample'
 import InputExample from '../views/InputExample'
 import TabExample from '../views/TabExample'
 import LoadingExample from '../views/LoadingExample'
+import ToastExample from '../views/ToastExample'
 
 
 Vue.use(Router)
@@ -35,6 +36,10 @@ export default new Router({
     {
       path: '/loading',
       component: LoadingExample
+    },
+    {
+      path: '/toast',
+      component: ToastExample
     }
-  ],
+  ]
 })

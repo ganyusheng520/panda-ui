@@ -6,6 +6,10 @@ import VIcon from './modules/icon'
 import VButton from './modules/button'
 import VInput from './modules/input'
 import VLoading from './modules/loading'
+import VPopup from './modules/popup'
+import VToast from './modules/toast'
+import createAPI from './modules/create-api'
+
 
 export {
   Style,
@@ -15,5 +19,8 @@ export {
   VIcon,
   VButton,
   VInput,
-  VLoading
+  VLoading,
+  VPopup,
+  VToast,
+  createAPI
 }

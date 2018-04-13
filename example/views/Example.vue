@@ -31,6 +31,9 @@
                 <v-cell left-text="Loading" @onCellClick="link('/loading')">
                     <v-icon :size="16" slot="cell-ft" class-name="icon-xiayibu"></v-icon>
                 </v-cell>
+                <v-cell left-text="Toast" @onCellClick="link('/toast')">
+                    <v-icon :size="16" slot="cell-ft" class-name="icon-xiayibu"></v-icon>
+                </v-cell>
             </v-cell-group>
             <v-cell-title>导航相关</v-cell-title>
             <v-cell-group>

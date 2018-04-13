@@ -40,8 +40,8 @@ export default {
   methods: {
     onClick(val) {
       console.log(val)
-    },
-  },
+    }
+  }
 }
 </script>
 

@@ -1,0 +1,56 @@
+@import "../../base/fn";
+
+.panda-toast {
+  &.panda-popup {
+    z-index: 900;
+  }
+  .panda-popup-content {
+    display: flex;
+    align-items: center;
+    padding: 13px 16px;
+    color: $toast-color;
+    background-color: $toast-bgc;
+    border-radius: 2px;
+  }
+}
+
+.panda-toast-icon {
+  width: 24px;
+  height: 24px;
+  font-size: $fontSize-large-xxx;
+}
+
+.panda-toast-tip {
+  line-height: 20px;
+  font-size: $fontSize-medium;
+  max-width: 12em;
+  max-height: 40px;
+  overflow: hidden;
+  margin-left: 8px;
+}
+
+.panda-toast-fade-enter-active {
+  animation: toast-in 0.2s;
+}
+
+.panda-toast-fade-leave-active {
+  animation: toast-out 0.2s;
+}
+
+@keyframes toast-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes toast-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
