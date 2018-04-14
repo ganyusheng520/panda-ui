@@ -25,7 +25,11 @@ if (files) {
 var webpackConfig = merge(baseWebpackConfig, {
   entry: modules,
   module: {
-    rules: utils.styleLoaders({ sourceMap: config.build.productionSourceMap, extract: true })
+    rules: utils.styleLoaders({
+      sourceMap: config.build.productionSourceMap,
+	    usePostCSS: true,
+	    extract: true
+    })
   },
   devtool: config.build.productionSourceMap ? '#source-map' : false,
   output: {
@@ -43,5 +47,8 @@ var webpackConfig = merge(baseWebpackConfig, {
     new ExtractTextPlugin(utils.assetsPath('[name]/style.css'))
   ]
 })
+
+const rules = webpackConfig.module.rules
+console.log('webpackConfig', rules[rules.length -3].use)
 
 module.exports = webpackConfig

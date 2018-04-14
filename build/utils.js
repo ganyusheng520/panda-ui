@@ -36,6 +36,9 @@ exports.cssLoaders = function (options) {
     if(loader === 'sass') {
 	    loaders.push({
 		    loader: 'resolve-url-loader',
+		    options: Object.assign({}, loaderOptions, {
+			    sourceMap: options.sourceMap
+		    })
 	    })
     }
     if (loader) {
@@ -83,7 +86,7 @@ exports.styleLoaders = function (options) {
     })
   }
 
-  return output
+	return output
 }
 
 exports.createNotifierCallback = () => {

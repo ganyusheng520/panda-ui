@@ -71,6 +71,9 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   ]
 })
 
+const rules = devWebpackConfig.module.rules
+console.log('webpackConfig', rules[rules.length -3].use)
+
 module.exports = new Promise((resolve, reject) => {
   portfinder.basePort = process.env.PORT || config.dev.port
   portfinder.getPort((err, port) => {
