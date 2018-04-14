@@ -9,7 +9,25 @@
           <v-button
             size="normal"
             type="primary"
-            @onButtonClick="showToastTime">Toast</v-button>
+            @onButtonClick="showToastTime">Toast time 1s</v-button>
+        </v-button-box>
+        <v-button-box>
+          <v-button
+            size="normal"
+            type="primary"
+            @onButtonClick="showToastTime0">Toast time 0</v-button>
+        </v-button-box>
+        <v-button-box>
+          <v-button
+                  size="normal"
+                  type="primary"
+                  @onButtonClick="showToastMask">Loading...</v-button>
+        </v-button-box>
+        <v-button-box>
+          <v-button
+                  size="normal"
+                  type="primary"
+                  @onButtonClick="showToastType">Correct</v-button>
         </v-button-box>
       </div>
     </div>
@@ -21,7 +39,6 @@
   export default {
     methods: {
       showToastTime() {
-        console.log(this)
         this.toast = this.$createToast({
           time: 1000,
           txt: 'Toast time 1s',

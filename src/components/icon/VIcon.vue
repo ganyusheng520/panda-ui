@@ -1,6 +1,6 @@
 <template>
   <i
-    class="iconfont icon--primary"
+    class="icon--primary"
     :class="getClassName"
     @click="handleClick"
   >

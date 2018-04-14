@@ -22,7 +22,6 @@ then
 
   # publish
   git push origin master
-  git push origin v$VERSION
   npm publish
 
 fi

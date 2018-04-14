@@ -32,7 +32,12 @@ exports.cssLoaders = function (options) {
   // generate loader string to be used with extract text plugin
   function generateLoaders (loader, loaderOptions) {
     const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
-
+    //解决scss中url引入资源的问题
+    if(loader === 'sass') {
+	    loaders.push({
+		    loader: 'resolve-url-loader',
+	    })
+    }
     if (loader) {
       loaders.push({
         loader: loader + '-loader',
@@ -61,7 +66,7 @@ exports.cssLoaders = function (options) {
     less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
     scss: generateLoaders('sass'),
-    stylus: generateLoaders('stylus'),
+	  stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
   }
 }
@@ -70,7 +75,6 @@ exports.cssLoaders = function (options) {
 exports.styleLoaders = function (options) {
   const output = []
   const loaders = exports.cssLoaders(options)
-
   for (const extension in loaders) {
     const loader = loaders[extension]
     output.push({

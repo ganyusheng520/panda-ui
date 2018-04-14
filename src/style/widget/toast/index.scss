@@ -17,7 +17,8 @@
 .panda-toast-icon {
   width: 24px;
   height: 24px;
-  font-size: $fontSize-large-xxx;
+  line-height: 1;
+  font-size: $fontSize-large-xxx !important;
 }
 
 .panda-toast-tip {
