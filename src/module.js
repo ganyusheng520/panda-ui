@@ -8,6 +8,7 @@ import VInput from './modules/input'
 import VLoading from './modules/loading'
 import VPopup from './modules/popup'
 import VToast from './modules/toast'
+import VPicker from './modules/picker'
 import createAPI from './modules/create-api'
 
 
@@ -22,5 +23,6 @@ export {
   VLoading,
   VPopup,
   VToast,
+  VPicker,
   createAPI
 }

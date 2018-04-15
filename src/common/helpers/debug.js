@@ -1,5 +1,5 @@
 
-const warn = function (msg) {
+export const warn = function (msg) {
   console.warn(`[panda-ui warn]: ${msg}`)
 }
-export default warn
+export const noop = function () {}

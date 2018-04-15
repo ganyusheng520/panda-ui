@@ -29,6 +29,8 @@ module.exports = {
       js: 'never',
       vue: 'never'
     }],
+    'no-plusplus': 0,
+	  'no-console': ["error", { allow: ["warn", "error"] }],
     'func-names': 'off',
     'no-prototype-builtins': 0,
 	  "comma-dangle": ["error", {

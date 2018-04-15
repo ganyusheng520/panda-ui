@@ -34,6 +34,9 @@
                 <v-cell left-text="Toast" @onCellClick="link('/toast')">
                     <v-icon :size="16" slot="cell-ft" class-name="panda-ic__arrow"></v-icon>
                 </v-cell>
+                <v-cell left-text="Picker" @onCellClick="link('/picker')">
+                    <v-icon :size="16" slot="cell-ft" class-name="panda-ic__arrow"></v-icon>
+                </v-cell>
             </v-cell-group>
             <v-cell-title>导航相关</v-cell-title>
             <v-cell-group>
@@ -66,6 +69,3 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "../assets/example";
-</style>

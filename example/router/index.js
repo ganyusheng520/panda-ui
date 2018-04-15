@@ -7,6 +7,7 @@ import InputExample from '../views/InputExample'
 import TabExample from '../views/TabExample'
 import LoadingExample from '../views/LoadingExample'
 import ToastExample from '../views/ToastExample'
+import PickerExample from '../views/PickerExample'
 
 
 Vue.use(Router)
@@ -40,6 +41,10 @@ export default new Router({
     {
       path: '/toast',
       component: ToastExample
+    },
+    {
+      path: '/picker',
+      component: PickerExample
     }
   ]
 })

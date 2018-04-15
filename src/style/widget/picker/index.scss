@@ -1,0 +1,132 @@
+@import "../../base/fn";
+
+$picker-lr-padding : 16px;
+.panda-picker-fade-enter,
+.panda-picker-fade-leave-active {
+  opacity: 0;
+}
+
+.panda-picker-fade-enter-active,
+.panda-picker-fade-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.panda-picker-panel {
+  height: 273px;
+  text-align: center;
+  font-size: $fontSize-medium;
+  background: $picker-bgc;
+}
+
+.panda-picker-move-enter,
+.panda-picker-move-leave-active {
+  transform: translate3d(0, 273px, 0);
+}
+
+.panda-picker-move-enter-active,
+.panda-picker-move-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.panda-picker-choose {
+  position: relative;
+  height: 60px;
+  > span {
+    position: absolute;
+    top: 6px;
+    padding: 16px $picker-lr-padding;
+    font-size: $fontSize-medium;
+  }
+
+  > [data-action="confirm"] {
+    right: 0;
+    color: $picker-confirm-btn-color;
+    &:active {
+      color: $picker-confirm-btn-active-color;
+    }
+  }
+
+  > [data-action="cancel"] {
+    left: 0;
+    color: $picker-cancel-btn-color;
+    &:active {
+      color: $picker-cancel-btn-active-color;
+    }
+  }
+
+  > h1 {
+    margin: 0;
+    line-height: 60px;
+    text-align: center;
+    font-weight: normal;
+    font-size: $fontSize-large-x;
+    color: $picker-title-color;
+  }
+}
+
+.panda-picker-content {
+  position: relative;
+  top: 20px;
+  > i {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    width: 100%;
+    height: 68px;
+    pointer-events: none;
+    transform: translateZ(0);
+  }
+
+  > .border-bottom-1px {
+    top: 0;
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.8)
+    );
+    &:after {
+      @include setBottomLine($color-row-line)
+    }
+  }
+
+  > .border-top-1px {
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.8)
+    );
+    &:before {
+      @include setTopLine($color-row-line)
+    }
+  }
+}
+
+.panda-picker-wheel-wrapper {
+  display: flex;
+  padding: 0 $picker-lr-padding;
+  > div {
+    @extend %flex-fix;
+    height: 173px;
+    overflow: hidden;
+    font-size: $fontSize-large-xx;
+  }
+}
+
+.wheel-scroll {
+  padding: 0;
+  margin-top: 68px;
+  line-height: 36px;
+  list-style: none;
+  > li {
+    list-style: none;
+    height: 36px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: $picker-item-color;
+  }
+}
+
+.panda-picker-footer {
+  height: 20px;
+}
