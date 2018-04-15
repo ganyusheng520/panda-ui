@@ -130,15 +130,15 @@ export default {
       this.normalTimePicker.show()
     },
     selectHandle(selectedVal, selectedIndex, selectedText) {
-      // this.$createDialog({
-      //   type: 'warn',
-      //   content: `Selected Item: <br/> - value: ${selectedVal.join(
-      //     ', '
-      //   )} <br/> - index: ${selectedIndex.join(
-      //     ', '
-      //   )} <br/> - text: ${selectedText.join(' ')}`,
-      //   icon: 'panda-ic__alert'
-      // }).show()
+      this.$createDialog({
+        type: 'warn',
+        content: `Selected Item: <br/> - value: ${selectedVal.join(
+          ', '
+        )} <br/> - index: ${selectedIndex.join(
+          ', '
+        )} <br/> - text: ${selectedText.join(' ')}`,
+        icon: 'panda-ic__alert'
+      }).show()
     },
     cancelHandle() {
       this.$createToast({

@@ -9,6 +9,7 @@ import VLoading from './modules/loading'
 import VPopup from './modules/popup'
 import VToast from './modules/toast'
 import VPicker from './modules/picker'
+import VDialog from './modules/dialog'
 import createAPI from './modules/create-api'
 
 
@@ -24,5 +25,6 @@ export {
   VPopup,
   VToast,
   VPicker,
+  VDialog,
   createAPI
 }

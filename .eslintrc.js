@@ -29,6 +29,7 @@ module.exports = {
       js: 'never',
       vue: 'never'
     }],
+    'no-script-url': 0,
     'no-plusplus': 0,
 	  'no-console': ["error", { allow: ["warn", "error"] }],
     'func-names': 'off',

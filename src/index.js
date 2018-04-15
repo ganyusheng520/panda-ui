@@ -10,6 +10,7 @@ import {
   VPopup,
   VToast,
   VPicker,
+  VDialog,
   createAPI
 } from './module'
 
@@ -30,6 +31,7 @@ function install(Vue) {
     VLoading,
     VPopup,
     VToast,
+    VDialog,
     VPicker
   ]
   components.forEach((Component) => {

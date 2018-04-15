@@ -48,7 +48,5 @@ var webpackConfig = merge(baseWebpackConfig, {
   ]
 })
 
-const rules = webpackConfig.module.rules
-console.log('webpackConfig', rules[rules.length -3].use)
 
 module.exports = webpackConfig

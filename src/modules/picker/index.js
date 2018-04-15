@@ -1,9 +1,9 @@
-import Picker from '../../components/picker/VPicker'
+import VPicker from '../../components/picker/VPicker'
 import addPicker from './api'
 
-Picker.install = function (Vue) {
-  Vue.component(Picker.name, Picker)
-  addPicker(Vue, Picker)
+VPicker.install = function (Vue) {
+  Vue.component(VPicker.name, VPicker)
+  addPicker(Vue, VPicker)
 }
 
-export default Picker
+export default VPicker
