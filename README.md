@@ -11,7 +11,7 @@ npm i -S panda-ui
 
 ```
 import Vue from 'vue'
-import panda from 'panda'
+import panda from 'panda-ui'
 Vue.use(panda)
 ```
 

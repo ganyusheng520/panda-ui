@@ -15,7 +15,7 @@ npm i -S panda-ui
 在入口文件main.js
 
 ```
-import panda from 'panda'
+import panda from 'panda-ui'
 Vue.use(panda)
 ```
 

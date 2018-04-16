@@ -2,18 +2,5 @@
 @import "./mixins";
 @import "./extend";
 @import "./icon/index";
-
-.border-top-1px {
-  position: relative;
-  &:before {
-    @include setTopLine($c_gray2)
-  }
-}
-
-.border-bottom-1px {
-  position: relative;
-  &:after {
-    @include setBottomLine($c_gray2)
-  }
-}
+@import "./global";
 

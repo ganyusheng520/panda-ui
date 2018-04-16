@@ -1,0 +1,122 @@
+@import '../../base/fn';
+
+.panda-action-sheet-fade-enter,
+.panda-action-sheet-fade-leave-active {
+  opacity: 0;
+}
+.panda-action-sheet-fade-enter-active,
+.panda-action-sheet-fade-leave-active {
+  transition: all .3s ease-in-out;
+}
+
+.panda-action-sheet-panel {
+  text-align: center;
+  font-size: $fontSize-medium;
+  background-color: $action-sheet-bgc;
+}
+
+.panda-action-sheet-move-enter,
+.panda-action-sheet-move-leave-active {
+  transform: translate3d(0, 100%, 0);
+}
+.panda-action-sheet-move-enter-active,
+.panda-action-sheet-move-leave-active {
+  transition: all .3s ease-in-out;
+}
+.panda-action-sheet-cancel {
+  background-color: $action-sheet-bgc;
+}
+.panda-action-sheet-cancel span,
+.panda-action-sheet-title,
+.panda-action-sheet-item {
+  display: block;
+  padding: 17px 16px;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: $fontSize-large;
+  font-weight: normal;
+  line-height: 1;
+  color: $action-sheet-color;
+  background-color: $action-sheet-bgc;
+}
+
+
+.panda-action-sheet-cancel span,
+.panda-action-sheet-item {
+  &:active {
+    background-color: $action-sheet-active-bgc;
+  }
+}
+
+
+.panda-action-sheet-title {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: $action-sheet-title-color;
+  font-size: $fontSize-large-x;
+}
+
+
+.panda-action-sheet-content {
+  overflow: hidden;
+  background: $action-sheet-bgc;
+}
+
+
+.panda-action-sheet-list {
+  list-style: none;
+}
+
+.panda-action-sheet-item {
+  list-style: none;
+  user-select: none;
+  &:last-of-type {
+    @extend %border-none;
+  }
+  &[data-align="left"] {
+    text-align: left;
+  }
+  &[data-align="right"] {
+    text-align: right;
+  }
+}
+
+
+.panda-action-sheet-space {
+  height: 6px;
+  background-color: $action-sheet-space-bgc;
+}
+
+
+.panda-action-sheet-item_active {
+  color: $action-sheet-active-color;
+}
+
+.panda-action-sheet_picker {
+  .panda-action-sheet-space {
+    height: 0
+  }
+  .panda-action-sheet-title {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  .panda-action-sheet-cancel {
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    span {
+      padding-top: 23px;
+      padding-bottom: 23px;
+      color: $action-sheet-picker-cancel-color;
+      font-size: $fontSize-medium;
+      background-color: transparent;
+      &:active {
+        color: $action-sheet-picker-cancel-active-color;
+        background-color: transparent;
+      }
+    }
+  }
+}

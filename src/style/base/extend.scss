@@ -5,3 +5,13 @@
   width: 1%;
 }
 
+%border-none {
+  &:before {
+    display: none;
+  }
+  &:after {
+    display: none;
+  }
+}
+
+

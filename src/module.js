@@ -10,6 +10,7 @@ import VPopup from './modules/popup'
 import VToast from './modules/toast'
 import VPicker from './modules/picker'
 import VDialog from './modules/dialog'
+import VActionSheet from './modules/action-sheet'
 import createAPI from './modules/create-api'
 
 
@@ -26,5 +27,6 @@ export {
   VToast,
   VPicker,
   VDialog,
+  VActionSheet,
   createAPI
 }

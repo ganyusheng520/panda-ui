@@ -18,7 +18,7 @@ $c_p_2: #488ff9;
 $c_p_3: #ffa400;
 $c_p_4: #fb7171;
 
-//默认应用色 
+//默认应用色
 $c_a_green: #2dc888;
 $c_a_blue: #488ff9;
 $c_a_yellow: #ffa400;
@@ -27,40 +27,40 @@ $c_a_violet: #8d71ff;
 $c_a_orange: #ff8022;
 
 //// basic
-$color-orange : #fc9153;
-$color-regular-blue : #4a4c5b;
-$color-background : #f3f4f5;
-$color-white : #fff;
+$color-orange: #fc9153;
+$color-regular-blue: #4a4c5b;
+$color-background: #f3f4f5;
+$color-white: #fff;
 
 //// gray
-$color-dark-grey : #333;
-$color-grey : #666;
-$color-light-grey : #999;
-$color-light-grey-s : #ccc;
-$color-light-grey-ss : #eee;
-$color-light-grey-sss : #fcfcfc;
-$color-active-grey : #e8e8e8;
+$color-dark-grey: #333;
+$color-grey: #666;
+$color-light-grey: #999;
+$color-light-grey-s: #ccc;
+$color-light-grey-ss: #eee;
+$color-light-grey-sss: #fcfcfc;
+$color-active-grey: #e8e8e8;
 
-$color-dark-grey-opacity : rgba(74, 76, 91, 0.8);
-$color-grey-opacity : rgba(0, 0, 0, .08);
-$color-light-grey-opacity : rgba(0, 0, 0, .04);
+$color-dark-grey-opacity: rgba(74, 76, 91, 0.8);
+$color-grey-opacity: rgba(0, 0, 0, 0.08);
+$color-light-grey-opacity: rgba(0, 0, 0, 0.04);
 
 //// orange
-$color-dark-orange : #e8864c;
-$color-light-orange : #fdc2a5;
-$color-orange-opacity : rgba(252, 145, 83, .08);
-$color-light-orange-opacity : rgba(252, 145, 83, .04);
+$color-dark-orange: #e8864c;
+$color-light-orange: #fdc2a5;
+$color-orange-opacity: rgba(252, 145, 83, 0.08);
+$color-light-orange-opacity: rgba(252, 145, 83, 0.04);
 
 //// blue
-$color-blue : #444654;
+$color-blue: #444654;
 
 //// row line
-$color-row-line : #ebebeb;
+$color-row-line: #ebebeb;
 //// column line
-$color-col-line : #f5f5f5;
+$color-col-line: #f5f5f5;
 
 /// mask
-$color-mask-bg : rgba(37, 38, 45, .4);
+$color-mask-bg: rgba(37, 38, 45, 0.4);
 
 // toast
 $toast-color: $c_gray3;
@@ -68,32 +68,44 @@ $toast-bgc: rgba(37, 38, 45, 0.9);
 
 // popup
 $popup-mask-bgc: rgb(37, 38, 45);
-$popup-mask-opacity: .4;
+$popup-mask-opacity: 0.4;
+
+// action-sheet
+$action-sheet-color: $color-grey;
+$action-sheet-active-color: $color-orange;
+$action-sheet-bgc: $color-white;
+$action-sheet-active-bgc: $color-light-grey-opacity;
+$action-sheet-title-color: $color-dark-grey;
+$action-sheet-space-bgc: $color-mask-bg;
+
+/// picker style
+$action-sheet-picker-cancel-color : $color-light-grey;
+$action-sheet-picker-cancel-active-color : $color-light-grey-s;
 
 // picker
-$picker-bgc : $c_white;
-$picker-title-color : $color-dark-grey;
-$picker-confirm-btn-color : $color-orange;
-$picker-confirm-btn-active-color : $color-light-orange;
-$picker-cancel-btn-color : $color-light-grey;
-$picker-cancel-btn-active-color : $color-light-grey-s;
-$picker-item-color : $color-dark-grey;
+$picker-bgc: $c_white;
+$picker-title-color: $color-dark-grey;
+$picker-confirm-btn-color: $color-orange;
+$picker-confirm-btn-active-color: $color-light-orange;
+$picker-cancel-btn-color: $color-light-grey;
+$picker-cancel-btn-active-color: $color-light-grey-s;
+$picker-item-color: $color-dark-grey;
 
 // dialog
-$dialog-color : $color-grey;
-$dialog-bgc : $color-white;
-$dialog-icon-color : $color-regular-blue;
-$dialog-icon-bgc : $color-background;
-$dialog-title-color : $color-dark-grey;
-$dialog-close-color : $color-light-grey;
-$dialog-btn-color : $color-light-grey;
-$dialog-btn-bgc : $color-white;
-$dialog-btn-active-bgc : $color-light-grey-opacity;
-$dialog-btn-highlight-color : $color-orange;
-$dialog-btn-highlight-active-bgc : $color-light-orange-opacity;
-$dialog-btn-disabled-color : $color-light-grey;
-$dialog-btn-disabled-active-bgc : transparent;
-$dialog-btns-split-color : $color-row-line;
+$dialog-color: $color-grey;
+$dialog-bgc: $color-white;
+$dialog-icon-color: $color-regular-blue;
+$dialog-icon-bgc: $color-background;
+$dialog-title-color: $color-dark-grey;
+$dialog-close-color: $color-light-grey;
+$dialog-btn-color: $color-light-grey;
+$dialog-btn-bgc: $color-white;
+$dialog-btn-active-bgc: $color-light-grey-opacity;
+$dialog-btn-highlight-color: $color-orange;
+$dialog-btn-highlight-active-bgc: $color-light-orange-opacity;
+$dialog-btn-disabled-color: $color-light-grey;
+$dialog-btn-disabled-active-bgc: transparent;
+$dialog-btns-split-color: $color-row-line;
 
 //距离
 $padding: 15px;
@@ -114,5 +126,3 @@ $fontSize-large: 16px;
 $fontSize-medium: 14px;
 $fontSize-small: 12px;
 $fontSize-small-s: 10px;
-
-

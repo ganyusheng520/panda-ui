@@ -8,6 +8,7 @@ import TabExample from '../views/TabExample'
 import LoadingExample from '../views/LoadingExample'
 import ToastExample from '../views/ToastExample'
 import PickerExample from '../views/PickerExample'
+import ActionExample from '../views/ActionExample'
 
 
 Vue.use(Router)
@@ -45,6 +46,10 @@ export default new Router({
     {
       path: '/picker',
       component: PickerExample
+    },
+    {
+      path: '/action-sheet',
+      component: ActionExample
     }
   ]
 })

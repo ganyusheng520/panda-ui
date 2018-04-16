@@ -11,6 +11,7 @@ import {
   VToast,
   VPicker,
   VDialog,
+  VActionSheet,
   createAPI
 } from './module'
 
@@ -32,7 +33,8 @@ function install(Vue) {
     VPopup,
     VToast,
     VDialog,
-    VPicker
+    VPicker,
+    VActionSheet
   ]
   components.forEach((Component) => {
     Component.install(Vue)

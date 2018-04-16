@@ -40,6 +40,9 @@
                 <v-cell left-text="Picker" @onCellClick="link('/picker')">
                     <v-icon :size="16" slot="cell-ft" class-name="panda-ic__arrow"></v-icon>
                 </v-cell>
+                <v-cell left-text="ActionSheet" @onCellClick="link('/action-sheet')">
+                    <v-icon :size="16" slot="cell-ft" class-name="panda-ic__arrow"></v-icon>
+                </v-cell>
             </v-cell-group>
             <v-cell-title>导航相关</v-cell-title>
             <v-cell-group>
